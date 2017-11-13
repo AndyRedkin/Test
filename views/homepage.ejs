@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="row">
+        <div class="col-xs-6">
+            <h3>Form</h3>
+            <form action="/script" method="GET" class="form-inline">
+                <input type="text" name="name" class="form-control" placeholder="enter name of script">
+                <button class="btn" type="submit">
+                    Launch
+                </button>
+            </form>
+            <form id="uploadForm"
+                  class="form-inline"
+                  enctype="multipart/form-data"
+                  action="/upload"
+                  method="post">
+                <input type="file" name="uploadFile" class="form-control"/>
+                <input type="submit" value="submit" class="btn"/>
+            </form>
+        </div>
+    </div>
+</div>
